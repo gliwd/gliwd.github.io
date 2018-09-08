@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="oracle,connect by," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="oracle中connect by的用法一.基本语法 12select * from table [start with condition1]    connect by [prior] id = parentId 一般用来查找子父关系的数据,也就是树形结构的数据;其返回的数据也能明确的区分出每一层的数据;  start with condition1 是用来限制第一层的数据,或者叫跟节点数据;">
+<meta name="keywords" content="oracle,connect by">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://gliwd.github.io/2018/08/22/hello-world/index.html">
+<meta property="og:title" content="oracle 中connect by 的用法">
+<meta property="og:url" content="https://gliwd.github.io/2018/09/08/oracle-中connect-by-的用法/index.html">
 <meta property="og:site_name" content="李卫东博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="oracle中connect by的用法一.基本语法 12select * from table [start with condition1]    connect by [prior] id = parentId 一般用来查找子父关系的数据,也就是树形结构的数据;其返回的数据也能明确的区分出每一层的数据;  start with condition1 是用来限制第一层的数据,或者叫跟节点数据;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-22T07:27:05.911Z">
+<meta property="og:updated_time" content="2018-09-08T12:22:53.079Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="oracle 中connect by 的用法">
+<meta name="twitter:description" content="oracle中connect by的用法一.基本语法 12select * from table [start with condition1]    connect by [prior] id = parentId 一般用来查找子父关系的数据,也就是树形结构的数据;其返回的数据也能明确的区分出每一层的数据;  start with condition1 是用来限制第一层的数据,或者叫跟节点数据;">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://gliwd.github.io/2018/08/22/hello-world/"/>
+  <link rel="canonical" href="https://gliwd.github.io/2018/09/08/oracle-中connect-by-的用法/"/>
 
 
 
 
 
-  <title>Hello World | 李卫东博客</title>
+  <title>oracle 中connect by 的用法 | 李卫东博客</title>
   
 
 
@@ -190,6 +191,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-标签"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -232,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://gliwd.github.io/2018/08/22/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://gliwd.github.io/2018/09/08/oracle-中connect-by-的用法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李卫东博客">
@@ -249,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">oracle 中connect by 的用法</h1>
         
 
         <div class="post-meta">
@@ -261,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-22T15:27:05+08:00">
-                2018-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T20:16:53+08:00">
+                2018-09-08
               </time>
             
 
@@ -271,6 +292,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/oracle/" itemprop="url" rel="index">
+                    <span itemprop="name">oracle</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -299,15 +342,27 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="oracle中connect-by的用法"><a href="#oracle中connect-by的用法" class="headerlink" title="oracle中connect by的用法"></a>oracle中connect by的用法</h3><h4 id="一-基本语法"><a href="#一-基本语法" class="headerlink" title="一.基本语法"></a>一.基本语法</h4><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from table [start with condition1]</span><br><span class="line">    connect by [prior] id = parentId</span><br></pre></td></tr></table></figure>
+<p>一般用来查找子父关系的数据,也就是树形结构的数据;其返回的数据也能明确的区分出每一层的数据;<br></p>
+<ol>
+<li>start with condition1 是用来限制第一层的数据,或者叫跟节点数据;以这部分数据为基础来查找第二层的数据,然后以第二层的数据来查找第三层的数据,以此类推;</li>
+<li>connect by [prior] id = parrentId 这部分是用来指明oracle在查找数据时是以怎样的一种关系去查找:比如说查找第二层数据时是以第一层数据的id去跟表里记录的parentId字段去匹配,如果这个条件成立，那么查找出来的数据就是第二层数据，同理第三层，第四层的数据都是按照这种方式去匹配！</li>
+</ol>
+<p>prio还有一种用法：</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from table [start with condition1]</span><br><span class="line">    connect by id= [prior] parentid</span><br></pre></td></tr></table></figure>
+<ol>
+<li>这种用法就表示从下往上查找数据，可以理解为从子节点查找父节点，用第一层数据的parentId去跟表记录中的id进行匹配，匹配成功，那么查找出第二层数据，上面那种就是从父级节点查找叶子节点。</li>
+</ol>
+<h5 id="其他特性"><a href="#其他特性" class="headerlink" title="其他特性"></a>其他特性</h5><ol>
+<li>level关键字，代表数型结构的层级编号，第一层是数字1，第二层是数字2，以此类推；</li>
+<li>CONNECT_BY_ROOT方法，能够获取第一层集结点结果集中的任意字段的值，例如：CONNECT_BY_ROOT(字段名)；<h4 id="二、例子"><a href="#二、例子" class="headerlink" title="二、例子"></a>二、例子</h4>1.从根节点上查找叶子节点</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select t.*,level,CONNECT_BY_ROOT(id)</span><br><span class="line">from tab_test t</span><br><span class="line">start with t.id = 0</span><br><span class="line">connect by prior t.id = t.fid;</span><br></pre></td></tr></table></figure>
+<p>2.从叶子节点查找上层节点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">--第一种，修改prior关键字的位置</span><br><span class="line">select t.*,level,connect_by_root(id)</span><br><span class="line">from tab_test t</span><br><span class="line">start with t.id = 4</span><br><span class="line">connect by t.id = prior t.fid;</span><br><span class="line">-- 第二种，prior关键字不动，调换id=fid逻辑关系的顺序</span><br><span class="line">select t.*，level,connect_by_root(id)</span><br><span class="line">from tab_test t</span><br><span class="line">start with t.id = 4</span><br><span class="line">connect by prior t.fid =t.id;</span><br></pre></td></tr></table></figure>
+<p>参考资料：<br><a href="https://blog.csdn.net/wang_yunj/article/details/51040029/" target="_blank" rel="noopener">https://blog.csdn.net/wang_yunj/article/details/51040029/</a></p>
 
       
     </div>
@@ -323,6 +378,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/oracle/" rel="tag"># oracle</a>
+          
+            <a href="/tags/connect-by/" rel="tag"># connect by</a>
+          
+        </div>
+      
 
       
       
@@ -332,15 +395,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/09/07/Array与Arrays的区别/" rel="next" title="Array与Arrays的区别">
+                <i class="fa fa-chevron-left"></i> Array与Arrays的区别
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/29/mysql触发器的使用/" rel="prev" title="mysql触发器的使用(1)">
-                mysql触发器的使用(1) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -424,7 +487,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -454,7 +535,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#oracle中connect-by的用法"><span class="nav-number">1.</span> <span class="nav-text">oracle中connect by的用法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-基本语法"><span class="nav-number">1.1.</span> <span class="nav-text">一.基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#其他特性"><span class="nav-number">1.1.1.</span> <span class="nav-text">其他特性</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、例子"><span class="nav-number">1.2.</span> <span class="nav-text">二、例子</span></a></li></ol></li></ol></div>
             
 
           </div>
